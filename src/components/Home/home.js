@@ -11,15 +11,20 @@ function Home() {
         <div className="header-text">
           <h1>
             <p>Full Stack Web Developer,</p>
-            <p>School-taught Systems Engineer</p>
           </h1>
         </div>
-        <h3>
-          I build websites with a focus on responsive design and accessibility.
-        </h3>
         <div>
-          <span className="scrollButtonLogo">↓</span>
-          <span className="scrollButton">scroll</span>
+          <h1>
+            <p>School-taught Systems Engineer</p>
+          </h1>
+          <h3>
+            I build websites with a focus on responsive design and
+            accessibility.
+          </h3>
+        </div>
+        <div className="scroll-button">
+          <div className="arrow-animation">↓</div>
+          scroll
         </div>
       </div>
     </StyledHome>
