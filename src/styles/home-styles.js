@@ -47,7 +47,7 @@ const bounce = keyframes`
 
 export const StyledHome = styled.section`
   min-height: 100vh;
-  min-width: 100vw;
+  min-width: 100%;
   background-color: #0a192f;
   color: #efefef;
   padding-right: auto;
@@ -59,15 +59,14 @@ export const StyledHome = styled.section`
   flex-wrap: wrap;
 
   .header-container {
-    height: 100%;
-
     .logo-container {
       span {
-        /* animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both; */
         text-align: left;
         font-size: 20px;
         letter-spacing: 1px;
         text-transform: uppercase;
+        font-weight: 400;
+        color: #8cb0d9;
       }
     }
 
@@ -87,6 +86,9 @@ export const StyledHome = styled.section`
     h3 {
       font-weight: inherit;
       font-size: 24px;
+      position: relative;
+      text-align: left;
+      color: #8cb0d9;
     }
 
     .scroll-button {
@@ -107,17 +109,24 @@ export const StyledHome = styled.section`
         }
       }
     }
+
+    .background-color-subheader {
+      background-color: #002d62;
+      left: 0;
+      bottom: 0;
+      position: absolute;
+      height: 50%;
+      width: 100%;
+    }
   }
 
   @media (max-width: 800px) {
     .header-container {
       padding-left: 15px;
       padding-right: 15px;
-      height: 100%;
 
       .logo-container {
         span {
-          /* animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both; */
           text-align: left;
           font-size: 15px;
           letter-spacing: 1px;

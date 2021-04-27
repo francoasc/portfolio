@@ -8,20 +8,20 @@ function Home() {
         <div className="logo-container">
           <span>FRANCO HERRERA ASCARATE</span>
         </div>
+
         <div className="header-text">
           <h1>
             <p>Full Stack Web Developer,</p>
           </h1>
         </div>
-        <div>
+        <span className="background-color-subheader" />
+        <div className="header-text">
           <h1>
-            <p>School-taught Systems Engineer</p>
+            <p>& Mobile Developer</p>
           </h1>
-          <h3>
-            I build websites with a focus on responsive design and
-            accessibility.
-          </h3>
+          <h3>I build websites with a focus on accessibility</h3>
         </div>
+
         <div className="scroll-button">
           <div className="arrow-animation">↓</div>
           scroll
