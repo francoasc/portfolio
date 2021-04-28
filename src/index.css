@@ -3,7 +3,9 @@
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
+  transition: 0.5s;
 }
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
