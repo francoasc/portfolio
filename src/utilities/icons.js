@@ -29,6 +29,6 @@ export const skills = [
   },
   {
     icon: <SiMongodb size="3rem" theme="#34A542" className="icons" />,
-    name: "Mongodb",
+    name: "MongoDB",
   },
 ];
