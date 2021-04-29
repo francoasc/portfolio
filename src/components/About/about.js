@@ -3,7 +3,7 @@ import { StyledAbout, StyledSkillIcon } from "../../styles/about-styles";
 import coding_image from "../../images/coding_ blue.svg";
 import { AiOutlineLinkedin, AiFillGithub } from "react-icons/ai";
 import { skills } from "../../utilities/icons";
-
+import CV from "../../assets/FRANCO-HERRERA-ASCARATE-CV.pdf";
 function About() {
   const openLinkHandler = (url) => window.open(url);
 
@@ -22,8 +22,11 @@ function About() {
             fascinating things like this web for example 😉
           </p>
           <p className="cv">
-            Take a look at my <span>CV</span>
-            <span id="logo_cv"> 📃</span>
+            Take a look at my{" "}
+            <a href={CV} target="_blank" rel="noreferrer">
+              <span>CV</span>
+              <span id="logo_cv"> 📃</span>
+            </a>
           </p>
 
           <div className="skills_container">

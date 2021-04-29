@@ -52,10 +52,15 @@ export const StyledAbout = styled.section`
         margin-top: 1rem;
         border-bottom: 1px solid gray;
         padding-bottom: 1rem;
+        a {
+          text-decoration: none;
+        }
         span {
+          color: #17a2b8;
+          text-decoration: none;
           cursor: pointer;
-          text-decoration: underline;
           :hover {
+            text-decoration: underline;
           }
         }
         #logo_cv {
