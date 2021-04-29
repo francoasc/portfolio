@@ -156,10 +156,8 @@ export const StyledHome = styled.section`
         position: absolute;
         bottom: 3px;
         right: 10px;
-        border: none;
-        background: none;
         color: #efefef;
-        font-size: 1rem;
+        font-size: 1.3rem;
         cursor: pointer;
         .arrow-animation {
           display: inline-block;
