@@ -18,7 +18,7 @@ export const StyledAbout = styled.section`
   min-width: 100%;
   background-color: #0a192f;
   color: #efefef;
-
+  padding: 0 5rem;
   .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -26,13 +26,11 @@ export const StyledAbout = styled.section`
     grid-template-areas: "about-me social-links";
     padding-bottom: 50px;
     padding-top: 50px;
-    gap: 100px;
+    gap: 2rem;
     height: fit-content;
     width: 100%;
-
     .about_me {
       grid-area: about-me;
-      /* border: 2px solid red; */
       width: 100%;
       margin: 0 1em;
       .title {
@@ -42,35 +40,44 @@ export const StyledAbout = styled.section`
       }
       .description {
         font-size: 1rem;
-        margin-bottom: 1rem;
-        word-wrap: break-word;
+        margin-bottom: 1.2rem;
+        line-height: 1.3;
       }
       .description_2 {
+        line-height: 1.3;
         font-size: 1rem;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid gray;
+        margin-bottom: 1.5rem;
       }
-
+      .cv {
+        margin-top: 1rem;
+        border-bottom: 1px solid gray;
+        padding-bottom: 1rem;
+        span {
+          cursor: pointer;
+          text-decoration: underline;
+          :hover {
+          }
+        }
+        #logo_cv {
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
       .skills_container {
         display: flex;
         flex-direction: column;
         h4 {
+          align-self: center;
+          margin-bottom: 1rem;
           font-size: 1.7rem;
-          margin-top: 2rem;
-        }
-        p {
           margin-top: 1rem;
-          span {
-            cursor: pointer;
-            text-decoration: underline;
-            :hover {
-            }
-          }
         }
+
         .skills {
-          width: 80%;
+          width: 100%;
           display: flex;
           flex-wrap: wrap;
+          justify-content: space-evenly;
         }
       }
     }
@@ -111,11 +118,9 @@ export const StyledAbout = styled.section`
         align-items: flex-end;
         text-decoration: none;
         color: #17a2b8;
-        /* color: #002d62; */
 
         .icon {
-          /* width: 1.2rem;
-          height: 1.2rem; */
+          height: 1.2rem;
         }
 
         span {
@@ -129,17 +134,56 @@ export const StyledAbout = styled.section`
       }
     }
   }
+
+  @media (max-width: 850px) {
+    padding: 0;
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-bottom: 0;
+      .about_me {
+        margin: 0 1rem;
+        /* border: 1px solid red; */
+        .skills_container {
+          margin-bottom: 2rem;
+          .skills {
+            width: 100%;
+          }
+          h4 {
+            align-self: center;
+          }
+        }
+      }
+      .social_links {
+        /* border: 1px solid green; */
+        width: 100%;
+        margin: 0;
+        div {
+          #social_img {
+            margin: 0;
+            width: 100%;
+            height: 400px;
+          }
+        }
+      }
+    }
+  }
 `;
 
 export const StyledSkillIcon = styled.span`
-  transition: 0s;
-  margin: 1.5rem;
   text-align: center;
+  margin-right: 0.5rem;
   .icons {
     :hover {
-      transition-duration: 0s;
-      transition-delay: 0s;
+      transition-duration: 0.1s;
       fill: ${({ children }) => children[0].props.theme};
+    }
+  }
+  @media (max-width: 850px) {
+    .icons {
+      height: 5rem;
+      width: 5rem;
     }
   }
 `;
