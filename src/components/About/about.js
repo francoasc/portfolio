@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledAbout, StyledSkillIcon } from "../../styles/about-styles";
-import coding_image from "../../images/coding_normal.svg";
+import coding_image from "../../images/coding_ blue.svg";
 import { AiOutlineLinkedin, AiFillGithub } from "react-icons/ai";
 import { skills } from "../../utilities/icons";
 
@@ -21,25 +21,20 @@ function About() {
             I love programming and see how from nowhere you can build
             fascinating things like this web for example 😉
           </p>
-          <hr />
+          <p className="cv">
+            Take a look at my <span>CV</span>
+            <span id="logo_cv"> 📃</span>
+          </p>
 
           <div className="skills_container">
             <h4>SKILLS</h4>
-            <p>
-              Take a look at my <span>CV</span> 📃
-            </p>
             <div className="skills">
-              {skills?.map((skill) => {
-                if (skill.test) {
-                  console.log(skill.test());
-                }
-                return (
-                  <StyledSkillIcon key={skill.name}>
-                    {skill.icon}
-                    <div className="skill_name">{skill.name}</div>
-                  </StyledSkillIcon>
-                );
-              })}
+              {skills?.map((skill) => (
+                <StyledSkillIcon key={skill.name}>
+                  {skill.icon}
+                  <div className="skill_name">{skill.name}</div>
+                </StyledSkillIcon>
+              ))}
             </div>
           </div>
         </div>
