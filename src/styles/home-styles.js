@@ -48,8 +48,8 @@ const bounce = keyframes`
 export const StyledHome = styled.section`
   min-height: 100vh;
   min-width: 100%;
-  background-color: #0a192f;
-  color: #efefef;
+  background-color: var(--mainColor);
+  color: var(--mainText);
   padding-right: auto;
   padding-left: auto;
   display: flex;
@@ -66,7 +66,7 @@ export const StyledHome = styled.section`
         letter-spacing: 1px;
         text-transform: uppercase;
         font-weight: 400;
-        color: #8cb0d9;
+        color: var(--secondaryText);
       }
     }
 
@@ -88,18 +88,20 @@ export const StyledHome = styled.section`
       font-size: 24px;
       position: relative;
       text-align: left;
-      color: #8cb0d9;
+      color: var(--secondaryText);
     }
 
     .scroll-button {
       position: absolute;
-      bottom: 3px;
-      right: 10px;
+      bottom: 10px;
+      left: 10px;
       border: none;
       background: none;
-      color: #efefef;
       font-size: 1rem;
       cursor: pointer;
+      span {
+        color: var(--buttonColor);
+      }
       .arrow-animation {
         display: inline-block;
       }
@@ -111,12 +113,22 @@ export const StyledHome = styled.section`
     }
 
     .background-color-subheader {
-      background-color: #002d62;
+      background-color: var(--backgroundSubHeader);
       left: 0;
       bottom: 0;
       position: absolute;
       height: 50%;
       width: 100%;
+    }
+    .theme-dots-container {
+      display: flex;
+      position: absolute;
+      bottom: 10px;
+      right: 25px;
+      span {
+        height: 30px;
+        width: 30px;
+      }
     }
   }
 
@@ -148,7 +160,6 @@ export const StyledHome = styled.section`
       }
 
       h3 {
-        font-weight: inherit;
         font-size: 24px;
       }
 
@@ -156,16 +167,26 @@ export const StyledHome = styled.section`
         position: absolute;
         bottom: 3px;
         right: 10px;
-        color: #efefef;
         font-size: 1.3rem;
         cursor: pointer;
         .arrow-animation {
+          color: var(--secondaryText);
           display: inline-block;
         }
         &:hover {
           .arrow-animation {
             animation: ${bounce} 2s linear 500ms infinite alternate forwards;
           }
+        }
+      }
+      .theme-dots-container {
+        display: flex;
+        position: absolute;
+        bottom: 3px;
+        right: 0rem;
+        span {
+          height: 30px;
+          width: 30px;
         }
       }
     }

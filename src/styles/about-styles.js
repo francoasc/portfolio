@@ -16,10 +16,11 @@ import styled from "styled-components";
 export const StyledAbout = styled.section`
   min-height: fit-content;
   min-width: 100%;
-  background-color: #0a192f;
+  background-color: var(--mainColor);
   color: #efefef;
   padding: 0 5rem;
   .container {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 
