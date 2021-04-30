@@ -1,5 +1,7 @@
 import React from "react";
 import { StyledHome } from "../../styles/home-styles";
+import { themeDots } from "../../utilities/icons";
+import { setTheme } from "../../utilities/theme";
 
 function Home() {
   return (
@@ -8,7 +10,6 @@ function Home() {
         <div className="logo-container">
           <span>FRANCO HERRERA ASCARATE</span>
         </div>
-
         <div className="header-text">
           <h1>
             <p>Full Stack Web Developer,</p>
@@ -21,10 +22,25 @@ function Home() {
           </h1>
           <h3>I build websites with a focus on accessibility</h3>
         </div>
-
+        <div className="theme-dots-container">
+          {themeDots.map(({ theme, color }) => {
+            return (
+              <span
+                onClick={() => setTheme(theme)}
+                style={{
+                  background: color,
+                  marginLeft: "1rem",
+                  border: "1px solid black",
+                  borderRadius: "50%",
+                }}
+                key={theme}
+              ></span>
+            );
+          })}
+        </div>
         <div className="scroll-button">
           <div className="arrow-animation">↓</div>
-          scroll
+          <span>scroll</span>
         </div>
       </div>
     </StyledHome>
