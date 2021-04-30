@@ -32,3 +32,10 @@ export const skills = [
     name: "MongoDB",
   },
 ];
+export const themeDots = [
+  { theme: "light", color: "#f7fafc" },
+
+  { theme: "blue", color: "#0d1926" },
+  { theme: "purple", color: "#46344e" },
+  { theme: "green", color: "#606b56" },
+];
