@@ -126,6 +126,7 @@ export const StyledHome = styled.section`
       bottom: 10px;
       right: 25px;
       span {
+        cursor: pointer;
         height: 30px;
         width: 30px;
       }

@@ -1,9 +1,10 @@
 import React from "react";
 import { StyledAbout, StyledSkillIcon } from "../../styles/about-styles";
-import coding_image from "../../images/coding_ blue.svg";
 import { AiOutlineLinkedin, AiFillGithub } from "react-icons/ai";
-import { skills } from "../../utilities/icons";
 import CV from "../../assets/FRANCO-HERRERA-ASCARATE-CV.pdf";
+import { skills } from "../../utilities/icons";
+import { setImage } from "../../utilities/images";
+
 function About() {
   const openLinkHandler = (url) => window.open(url);
 
@@ -43,7 +44,11 @@ function About() {
         </div>
         <div className="social_links">
           <div>
-            <img id="social_img" alt="coding_image" src={coding_image} />
+            <img
+              id="social_img"
+              alt="coding_image"
+              src={setImage(localStorage.getItem("theme"))}
+            />
           </div>
           <h3>You can find me in:</h3>
           <p

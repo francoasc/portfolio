@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import About from "./components/About/about";
-import Home from "./components/Home/home";
+import About from "./components/About";
+import Home from "./components/Home";
 // import Navbar from "./components/Navbar/navbar";
 import { setTheme } from "./utilities/theme";
 

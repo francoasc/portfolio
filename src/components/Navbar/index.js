@@ -24,12 +24,14 @@ const Navbar = () => {
   }, [prevScrollPos, visible, handleScroll]);
 
   const navbarStyles = {
-    position: "fixed",
+    position: "sticky",
     height: "60px",
     width: "100%",
+    top: 0,
+    left: 0,
     backgroundColor: "grey",
     textAlign: "center",
-    transition: "top 0.6s",
+    transition: "top 0.3s",
   };
 
   return (
