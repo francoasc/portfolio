@@ -44,11 +44,7 @@ function About() {
         </div>
         <div className="social_links">
           <div>
-            <img
-              id="social_img"
-              alt="coding_image"
-              src={setImage(localStorage.getItem("theme"))}
-            />
+            <img id="social_img" alt="coding_image" />
           </div>
           <h3>You can find me in:</h3>
           <p
