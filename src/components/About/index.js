@@ -3,7 +3,6 @@ import { StyledAbout, StyledSkillIcon } from "../../styles/about-styles";
 import { AiOutlineLinkedin, AiFillGithub } from "react-icons/ai";
 import CV from "../../assets/FRANCO-HERRERA-ASCARATE-CV.pdf";
 import { skills } from "../../utilities/icons";
-import { setImage } from "../../utilities/images";
 
 function About() {
   const openLinkHandler = (url) => window.open(url);
