@@ -34,8 +34,7 @@ export const skills = [
 ];
 export const themeDots = [
   { theme: "light", color: "#f7fafc" },
-
   { theme: "blue", color: "#0d1926" },
-  { theme: "purple", color: "#46344e" },
+  { theme: "purple", color: "#4b0081" },
   { theme: "green", color: "#606b56" },
 ];
