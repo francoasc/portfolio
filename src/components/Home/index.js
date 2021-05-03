@@ -29,9 +29,6 @@ function Home() {
                 onClick={() => setTheme(theme)}
                 style={{
                   background: color,
-                  marginLeft: "1rem",
-                  border: "1px solid black",
-                  borderRadius: "50%",
                 }}
                 key={theme}
               ></span>

@@ -129,6 +129,9 @@ export const StyledHome = styled.section`
         cursor: pointer;
         height: 30px;
         width: 30px;
+        margin-left: 1rem;
+        border: 1px solid black;
+        border-radius: 50%;
       }
     }
   }
