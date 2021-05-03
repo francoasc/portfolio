@@ -38,21 +38,25 @@ export const StyledAbout = styled.section`
         font-size: 1.7rem;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
+        color: var(--mainText);
       }
       .description {
         font-size: 1rem;
         margin-bottom: 1.2rem;
         line-height: 1.3;
+        color: var(--secondaryText);
       }
       .description_2 {
         line-height: 1.3;
         font-size: 1rem;
         margin-bottom: 1.5rem;
+        color: var(--secondaryText);
       }
       .cv {
         margin-top: 1rem;
         border-bottom: 1px solid gray;
         padding-bottom: 1rem;
+        color: var(--secondaryText);
         a {
           text-decoration: none;
         }
@@ -77,6 +81,7 @@ export const StyledAbout = styled.section`
           margin-bottom: 1rem;
           font-size: 1.7rem;
           margin-top: 1rem;
+          color: var(--mainText);
         }
 
         .skills {
@@ -111,6 +116,7 @@ export const StyledAbout = styled.section`
         margin-top: 1.5rem;
         align-self: center;
         font-size: 1.7rem;
+        color: var(--mainText);
       }
 
       #github-p {
@@ -180,10 +186,18 @@ export const StyledAbout = styled.section`
 export const StyledSkillIcon = styled.span`
   text-align: center;
   margin-right: 0.5rem;
+
+  .light {
+    filter: drop-shadow(1px 1px 0px var(--mainText))
+      drop-shadow(-1px 1px 0px var(--mainText))
+      drop-shadow(1px -1px 0px var(--mainText))
+      drop-shadow(-1px -1px 0px var(--mainText));
+  }
+
   .icons {
     :hover {
       transition-duration: 0.1s;
-      fill: ${({ children }) => children[0].props.theme};
+      fill: ${(props) => console.log(props)};
     }
   }
   @media (max-width: 850px) {
