@@ -1,22 +1,13 @@
 :root {
   --mainColor: #fafafa;
   --secondaryColor: #fff;
-  --colorBorder: #c1c1c1;
   --mainText: #000;
-  --coverText: #fff;
   --secondaryText: #3d3d3d;
   --themeDotsBorder: #24292e;
+  --backgroundSubHeader: #efefef;
+  --buttonColor: black;
+  --colorBorder: #c1c1c1;
+  --coverText: #fff;
   --previewBg: rgb(251, 249, 243, 0.8);
   --previewShadow: #f0ead6;
-  --buttonColor: black;
-  --backgroundSubHeader: #efefef;
 }
-
-/* --background-color: #fafafa;
---text-color: #000;
---shade-100: #efefef;
---shade-300: #8a8a8a;
---shade-500: #3d3d3d;
---secondary-color: #ccd0be;
---grey-color: #c2bfbc;
---grey-text: #595959; */
