@@ -2,14 +2,17 @@
   --mainColor: #4b0081;
   --secondaryColor: #382a3f;
   --mainText: #fff;
-  --secondaryText: #ab3ed8;
-  --colorBorder: #1d1520;
-  --coverText: white;
+  --secondaryText: #f7fafc;
   --themeDotsBorder: #fff;
+  --backgroundSubHeader: #650099;
+  --buttonColor: #fff;
+  --skillIcons: #161914;
+  --links: #ee4a00;
+  --colorBorder: #1d1520;
+
+  --coverText: white;
   --previewBg: rgb(29, 21, 32, 0.8);
   --previewShadow: #2b202f;
-  --buttonColor: #fff;
-  --backgroundSubHeader: #650099;
 }
 
 /* #4b0081

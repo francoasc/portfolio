@@ -6,8 +6,11 @@
   --themeDotsBorder: #24292e;
   --backgroundSubHeader: #efefef;
   --buttonColor: black;
+  --skillIcons: #161914;
+  --links: #17a2b8;
   --colorBorder: #c1c1c1;
+
   --coverText: #fff;
   --previewBg: rgb(251, 249, 243, 0.8);
-  --previewShadow: #f0ead6;
+  --previewShadow: #161914;
 }

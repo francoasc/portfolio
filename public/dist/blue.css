@@ -1,13 +1,18 @@
 :root {
   --mainColor: #0d1926;
   --secondaryColor: #192734;
-  --colorBorder: #164d56;
   --mainText: #f7fafc;
-  --coverText: white;
-  --secondaryText: #8cb0d9;
+  --secondaryText: #efefef;
   --themeDotsBorder: #fff;
+  --backgroundSubHeader: #1a324c;
+  --buttonColor: #f7fafc;
+  --skillIcons: #161914;
+  --links: #17a2b8;
+  --colorBorder: #1a324c;
+
+  --coverText: white;
   --previewBg: rgb(25, 39, 52, 0.8);
   --previewShadow: #111921;
-  --buttonColor: #f7fafc;
-  --backgroundSubHeader: #1a324c;
 }
+
+/* --secondaryText: #8cb0d9; */

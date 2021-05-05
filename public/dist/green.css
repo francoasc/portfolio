@@ -2,12 +2,15 @@
   --mainColor: #515a48;
   --secondaryColor: #515a48;
   --mainText: #fff;
-  --secondaryText: #32382d;
-  --colorBorder: #161914;
-  --coverText: white;
+  --secondaryText: #f7fafc;
   --themeDotsBorder: #fff;
+  --backgroundSubHeader: #606b56;
+  --buttonColor: #f7fafc;
+  --skillIcons: #161914;
+  --links: #48b3f7;
+  --colorBorder: #161914;
+
+  --coverText: white;
   --previewBg: rgb(81, 90, 72, 0.8);
   --previewShadow: #2a2f25;
-  --buttonColor: #f7fafc;
-  --backgroundSubHeader: #606b56;
 }
