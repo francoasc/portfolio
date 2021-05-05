@@ -59,14 +59,17 @@ export const StyledAbout = styled.section`
         color: var(--secondaryText);
         a {
           text-decoration: none;
-        }
-        span {
-          color: #17a2b8;
-          text-decoration: none;
-          cursor: pointer;
+          color: var(--links);
           :hover {
             text-decoration: underline;
           }
+        }
+        span {
+          font-size: 1rem;
+          font-weight: 1000;
+          color: var(--links);
+          text-decoration: none;
+          cursor: pointer;
         }
         #logo_cv {
           text-decoration: none;
@@ -89,6 +92,9 @@ export const StyledAbout = styled.section`
           display: flex;
           flex-wrap: wrap;
           justify-content: space-evenly;
+          div {
+            color: var(--secondaryText);
+          }
         }
       }
     }
@@ -129,7 +135,8 @@ export const StyledAbout = styled.section`
         justify-content: center;
         align-items: flex-end;
         text-decoration: none;
-        color: #17a2b8;
+        /* color: #17a2b8; */
+        color: var(--links);
 
         .icon {
           height: 1.2rem;
@@ -156,7 +163,6 @@ export const StyledAbout = styled.section`
       padding-bottom: 0;
       .about_me {
         margin: 0 1rem;
-        /* border: 1px solid red; */
         .skills_container {
           margin-bottom: 2rem;
           .skills {
@@ -168,7 +174,6 @@ export const StyledAbout = styled.section`
         }
       }
       .social_links {
-        /* border: 1px solid green; */
         width: 100%;
         margin: 0;
         div {
@@ -186,18 +191,16 @@ export const StyledAbout = styled.section`
 export const StyledSkillIcon = styled.span`
   text-align: center;
   margin-right: 0.5rem;
-
-  .light {
-    filter: drop-shadow(1px 1px 0px var(--mainText))
-      drop-shadow(-1px 1px 0px var(--mainText))
-      drop-shadow(1px -1px 0px var(--mainText))
-      drop-shadow(-1px -1px 0px var(--mainText));
-  }
+  margin-bottom: 0.5rem;
 
   .icons {
+    filter: drop-shadow(1px 1px 0px var(--skillIcons))
+      drop-shadow(-1px 1px 0px var(--skillIcons))
+      drop-shadow(1px -1px 0px var(--skillIcons))
+      drop-shadow(-1px -1px 0px var(--skillIcons));
     :hover {
       transition-duration: 0.1s;
-      fill: ${(props) => console.log(props)};
+      fill: ${({ children }) => children[0].props.theme};
     }
   }
   @media (max-width: 850px) {

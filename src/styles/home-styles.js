@@ -44,7 +44,7 @@ const bounce = keyframes`
     transform: translateY(-17px);
   }
 `;
-
+//TODO: arreglar el estilo blue para que el subtitulo no sea blanco
 export const StyledHome = styled.section`
   min-height: 100vh;
   min-width: 100%;
@@ -99,6 +99,7 @@ export const StyledHome = styled.section`
       background: none;
       font-size: 1rem;
       cursor: pointer;
+      width: fit-content;
       span {
         color: var(--buttonColor);
       }
@@ -158,7 +159,7 @@ export const StyledHome = styled.section`
             text-align: left;
             line-height: 130%;
             letter-spacing: -0.03em;
-            font-size: 32px;
+            font-size: 35px;
           }
         }
       }
@@ -191,6 +192,17 @@ export const StyledHome = styled.section`
         span {
           height: 30px;
           width: 30px;
+        }
+      }
+    }
+  }
+  @media (max-width: 320px) {
+    .header-container {
+      .header-text {
+        h1 {
+          p {
+            font-size: 25px;
+          }
         }
       }
     }
