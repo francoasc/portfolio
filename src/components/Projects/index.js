@@ -1,7 +1,56 @@
 import React from "react";
+import {
+  StyledProjectCard,
+  StyledProjects,
+} from "../../styles/projects-styles";
+import { projects } from "../../utilities/projects";
+import { AiFillGithub } from "react-icons/ai";
+import { HiExternalLink } from "react-icons/hi";
 
+import { openLinkHandler } from "../About/index";
 function Projects() {
-  return <div></div>;
+  return (
+    <StyledProjects>
+      <div className="container">
+        <h1>Take a look at my projects</h1>
+        <ul className="projects_container">
+          {projects?.map((project, i) => (
+            <StyledProjectCard key={i} rowReverse={i} right={i}>
+              <div className="project_content">
+                <h3 className="project_title">{project.name}</h3>
+                <div className="project_description">{project.description}</div>
+                <div className="project_tech_container">
+                  <ul className="project_tech_list">
+                    <span>Stack:</span>
+
+                    {project.techList.map((tech) => (
+                      <span
+                        key={tech}
+                        style={{ listStyle: "none" }}
+                        className="tech"
+                      >
+                        {tech}{" "}
+                      </span>
+                    ))}
+                  </ul>
+                </div>
+                <div
+                  className="project_links"
+                  onClick={() => openLinkHandler(project.link)}
+                >
+                  <AiFillGithub size="1.5rem" id="icon" />
+                  <HiExternalLink size="1.5rem" id="icon" />
+                </div>
+              </div>
+              <div className="project_image">
+                <img alt="alt_image" src={project.image} />
+              </div>
+            </StyledProjectCard>
+          ))}
+        </ul>
+      </div>
+    </StyledProjects>
+  );
 }
 
 export default Projects;
