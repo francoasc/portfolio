@@ -4,9 +4,9 @@ import { AiOutlineLinkedin, AiFillGithub } from "react-icons/ai";
 import CV from "../../assets/FRANCO-HERRERA-ASCARATE-CV.pdf";
 import { skills } from "../../utilities/icons";
 
-function About() {
-  const openLinkHandler = (url) => window.open(url);
+export const openLinkHandler = (url) => window.open(url);
 
+function About() {
   return (
     <StyledAbout>
       <div className="container">
@@ -45,7 +45,7 @@ function About() {
           <div>
             <img id="social_img" alt="coding_image" />
           </div>
-          <h3>You can find me in:</h3>
+          <h3>Find me in:</h3>
           <p
             id="github-p"
             onClick={() => openLinkHandler("https://github.com/francoasc")}

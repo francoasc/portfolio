@@ -1,6 +1,12 @@
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiRedux, SiPostgresql, SiGraphql, SiMongodb } from "react-icons/si";
+import {
+  SiRedux,
+  SiPostgresql,
+  SiGraphql,
+  SiMongodb,
+  SiStyledComponents,
+} from "react-icons/si";
 
 export const skills = [
   {
@@ -30,6 +36,10 @@ export const skills = [
   {
     icon: <SiMongodb size="5rem" theme="#34A542" className="icons" />,
     name: "MongoDB",
+  },
+  {
+    icon: <SiStyledComponents size="5rem" theme="#F7CA4C" className="icons" />,
+    name: "Styled-Components",
   },
 ];
 export const themeDots = [
