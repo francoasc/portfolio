@@ -24,6 +24,8 @@ export const StyledProjects = styled.section`
     }
   }
   @media (max-width: 850px) {
+    padding: 0;
+    margin: 0;
     .projects_container {
       li {
         .project_image {
@@ -44,6 +46,10 @@ export const StyledProjectCard = styled.li`
   .project_content {
     position: relative;
     width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 0px;
     .project_title {
       font-size: 2rem;
       font-weight: 900;
@@ -54,6 +60,7 @@ export const StyledProjectCard = styled.li`
     .project_description {
       color: var(--secondaryText);
       padding: 0 1.5rem;
+      text-align: left;
     }
     .project_tech_list {
       padding: 1rem 1.5rem 0 1.5rem;
@@ -66,6 +73,19 @@ export const StyledProjectCard = styled.li`
       position: absolute;
       right: ${({ rowReverse }) => (rowReverse % 2 === 0 ? 0 : 100)};
       bottom: 0;
+      #icon {
+        fill: var(--mainText);
+        cursor: pointer;
+        &:hover {
+          transition: 0.5s;
+          border-radius: 100%;
+          border: 2px solid var(--mainText);
+        }
+      }
+      #no-link {
+        fill: gray;
+        cursor: not-allowed;
+      }
     }
   }
   .project_image {
@@ -75,4 +95,33 @@ export const StyledProjectCard = styled.li`
       height: 100%;
     }
   }
+
+  @media (max-width: 850px) {
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr); */
+
+    .project_content {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .project_title {
+        font-size: 18px;
+      }
+      .project_description {
+        font-size: 12px;
+      }
+    }
+    .project_image {
+      height: 180px;
+    }
+  }
 `;
+
+//TODO: terminar el responsive de project card

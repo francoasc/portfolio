@@ -6,8 +6,8 @@ import {
 import { projects } from "../../utilities/projects";
 import { AiFillGithub } from "react-icons/ai";
 import { HiExternalLink } from "react-icons/hi";
-
 import { openLinkHandler } from "../About/index";
+
 function Projects() {
   return (
     <StyledProjects>
@@ -34,12 +34,23 @@ function Projects() {
                     ))}
                   </ul>
                 </div>
-                <div
-                  className="project_links"
-                  onClick={() => openLinkHandler(project.link)}
-                >
-                  <AiFillGithub size="1.5rem" id="icon" />
-                  <HiExternalLink size="1.5rem" id="icon" />
+                <div className="project_links">
+                  <HiExternalLink
+                    size="1.5rem"
+                    id={`${project.link ? "icon" : "no-link"}`}
+                    onClick={
+                      project.link ? () => openLinkHandler(project.link) : null
+                    }
+                  />
+                  <AiFillGithub
+                    size="1.5rem"
+                    id={`${project.repository ? "icon" : "no-link"}`}
+                    onClick={
+                      project.repository
+                        ? () => openLinkHandler(project.link)
+                        : null
+                    }
+                  />
                 </div>
               </div>
               <div className="project_image">
