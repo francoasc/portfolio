@@ -66,7 +66,7 @@ export const StyledHome = styled.section`
         letter-spacing: 1px;
         text-transform: uppercase;
         font-weight: 400;
-        color: var(--secondaryText);
+        color: var(--subtitle);
       }
     }
 
@@ -88,7 +88,7 @@ export const StyledHome = styled.section`
       font-size: 24px;
       position: relative;
       text-align: left;
-      color: var(--secondaryText);
+      color: var(--subtitle);
     }
 
     .scroll-button {
