@@ -84,9 +84,8 @@ export const StyledProjectCard = styled.li`
         fill: var(--mainText);
         cursor: pointer;
         &:hover {
-          transition: 0.5s;
-          border-radius: 100%;
-          border: 2px solid var(--mainText);
+          transition: 0s;
+          fill: var(--buttonColor);
         }
       }
       #no-link {
@@ -107,7 +106,7 @@ export const StyledProjectCard = styled.li`
     height: fit-content;
     display: flex;
     flex-direction: column-reverse;
-
+    margin: 0px 1.25rem 1rem 1.25rem;
     .project_content {
       display: flex;
       flex-direction: column;
@@ -131,10 +130,12 @@ export const StyledProjectCard = styled.li`
         padding: 0.5rem;
 
         #icon {
+          margin-left: 0.2rem;
           height: 2rem;
           width: 2rem;
         }
         #no-link {
+          margin-left: 0.2rem;
           height: 2rem;
           width: 2rem;
         }
