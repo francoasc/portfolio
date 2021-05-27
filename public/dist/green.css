@@ -1,13 +1,14 @@
 :root {
   --mainColor: #515a48;
-  --secondaryColor: #515a48;
+  --secondaryColor: #606b56;
   --mainText: #fff;
   --secondaryText: #f7fafc;
   --themeDotsBorder: #fff;
   --backgroundSubHeader: #606b56;
-  --buttonColor: #f7fafc;
+  --buttonColor: #2a2f25;
   --skillIcons: #161914;
   --links: #48b3f7;
-  --colorBorder: #161914;
+  --colorBorder: #2a2f25;
   --subtitle: #2a2f25;
+  --contactDescription: #f7fafc;
 }
