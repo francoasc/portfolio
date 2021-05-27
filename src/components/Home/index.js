@@ -8,19 +8,23 @@ function Home() {
     <StyledHome>
       <div className="header-container">
         <div className="logo-container">
-          <span>FRANCO HERRERA ASCARATE</span>
+          <span data-aos="flip-left" data-aos-duration="2000">
+            FRANCO HERRERA ASCARATE
+          </span>
         </div>
         <div className="header-text">
           <h1>
-            <p>Full Stack Web Developer,</p>
+            <p data-aos="fade-up">Full Stack Web Developer,</p>
           </h1>
         </div>
         <span className="background-color-subheader" />
         <div className="header-text">
           <h1>
-            <p>& Mobile Developer</p>
+            <p data-aos="fade-up">& Mobile Developer</p>
           </h1>
-          <h3>I build websites with a focus on accessibility</h3>
+          <h3 data-aos="flip-right" data-aos-duration="2000">
+            I build websites with a focus on accessibility
+          </h3>
         </div>
         <div className="theme-dots-container">
           {themeDots.map(({ theme, color }) => {

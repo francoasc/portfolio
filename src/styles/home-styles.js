@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+
 const bounce = keyframes`
   0% {
     animation-timing-function: ease-out;
@@ -40,11 +41,10 @@ const bounce = keyframes`
   }
 
   100% {
-    opacity: 0;
     transform: translateY(-17px);
   }
 `;
-//TODO: arreglar el estilo blue para que el subtitulo no sea blanco
+
 export const StyledHome = styled.section`
   min-height: 100vh;
   min-width: 100%;
@@ -61,6 +61,7 @@ export const StyledHome = styled.section`
   .header-container {
     .logo-container {
       span {
+        display: inline-block;
         text-align: left;
         font-size: 20px;
         letter-spacing: 1px;
@@ -92,6 +93,7 @@ export const StyledHome = styled.section`
     }
 
     .scroll-button {
+      animation: fade-in-bottom 0.5s ease-in-out 150ms both;
       position: absolute;
       bottom: 10px;
       left: 10px;
