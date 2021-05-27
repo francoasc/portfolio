@@ -1,20 +1,8 @@
 import styled from "styled-components";
 
-//Background colors
-// #fff
-// #192734
-// #7e4c74
-// #78866b
-
-// #fc6058
-// #fec02f
-// #2aca3e
-
-// #c1c1c1
-// #164d56;
-
 export const StyledAbout = styled.section`
-  min-height: fit-content;
+  height: fit-content;
+  min-height: 100vh;
   min-width: 100%;
   background-color: var(--mainColor);
   color: #efefef;
@@ -197,9 +185,10 @@ export const StyledSkillIcon = styled.span`
       drop-shadow(-1px 1px 0px var(--skillIcons))
       drop-shadow(1px -1px 0px var(--skillIcons))
       drop-shadow(-1px -1px 0px var(--skillIcons));
-    :hover {
+    fill: #efefef;
+    &:hover {
       transition-duration: 0.1s;
-      fill: ${({ children }) => children[0].props.theme};
+      fill: ${({ theme }) => theme};
     }
   }
   @media (max-width: 850px) {
