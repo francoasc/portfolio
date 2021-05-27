@@ -135,7 +135,6 @@ export const StyledAbout = styled.section`
         justify-content: center;
         align-items: flex-end;
         text-decoration: none;
-        /* color: #17a2b8; */
         color: var(--links);
 
         .icon {
