@@ -7,32 +7,27 @@ import { projects } from "../../utilities/projects";
 import { AiFillGithub } from "react-icons/ai";
 import { HiExternalLink } from "react-icons/hi";
 import { openLinkHandler } from "../About/index";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Projects() {
   return (
     <StyledProjects>
       <div className="container">
-        <h1>Take a look at my projects</h1>
+        <h1 data-aos="zoom-in" data-aos-duration="1500">
+          Take a look at my projects
+        </h1>
         <ul className="projects_container">
-          {projects?.map((project, i) => (
-            <StyledProjectCard key={i} rowReverse={i} right={i}>
+          {projects.map((project, i) => (
+            <StyledProjectCard
+              key={i}
+              rowReverse={i}
+              right={i}
+              data-aos={`${i % 2 === 0 ? "flip-left" : "flip-right"}`}
+            >
               <div className="project_content">
                 <h3 className="project_title">{project.name}</h3>
-                <div className="project_description">{project.description}</div>
-                <div className="project_tech_container">
-                  <ul className="project_tech_list">
-                    <span>Stack:</span>
-
-                    {project.techList.map((tech) => (
-                      <span
-                        key={tech}
-                        style={{ listStyle: "none" }}
-                        className="tech"
-                      >
-                        {tech}{" "}
-                      </span>
-                    ))}
-                  </ul>
+                <div className="project_description">
+                  <p>{project.description}</p>
                 </div>
                 <div className="project_links">
                   <HiExternalLink
@@ -47,14 +42,14 @@ function Projects() {
                     id={`${project.repository ? "icon" : "no-link"}`}
                     onClick={
                       project.repository
-                        ? () => openLinkHandler(project.link)
+                        ? () => openLinkHandler(project.repository)
                         : null
                     }
                   />
                 </div>
               </div>
               <div className="project_image">
-                <img alt="alt_image" src={project.image} />
+                <LazyLoadImage alt="alt_image" src={project.image} />
               </div>
             </StyledProjectCard>
           ))}
