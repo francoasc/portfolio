@@ -106,6 +106,7 @@ export const StyledHome = styled.section`
         color: var(--buttonColor);
       }
       .arrow-animation {
+        color: var(--buttonColor);
         display: inline-block;
       }
       &:hover {
@@ -177,7 +178,6 @@ export const StyledHome = styled.section`
         font-size: 1.3rem;
         cursor: pointer;
         .arrow-animation {
-          color: var(--secondaryText);
           display: inline-block;
         }
         &:hover {

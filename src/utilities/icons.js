@@ -10,41 +10,50 @@ import {
 
 export const skills = [
   {
-    icon: <IoLogoJavascript size="5rem" theme="#F7DF1E" className="icons" />,
+    icon: <IoLogoJavascript size="5rem" className="icons" />,
     name: "JavaScript",
+    theme: "#F7DF1E",
   },
   {
-    icon: <FaNodeJs size="5rem" theme="#88C043" className="icons" />,
+    icon: <FaNodeJs size="5rem" className="icons" />,
     name: "NodeJS",
+    theme: "#88C043",
   },
   {
-    icon: <FaReact size="5rem" theme="#7BDEFD" className="icons" />,
+    icon: <FaReact size="5rem" className="icons" />,
     name: "ReactJS",
+    theme: "#7BDEFD",
   },
   {
-    icon: <SiRedux size="5rem" theme="#764ABC" className="icons" />,
+    icon: <SiRedux size="5rem" className="icons" />,
     name: "Redux",
+    theme: "#764ABC",
   },
   {
-    icon: <SiGraphql size="5rem" theme="#E10098" className="icons" />,
+    icon: <SiGraphql size="5rem" className="icons" />,
     name: "GraphQL",
+    theme: "#E10098",
   },
   {
-    icon: <SiPostgresql size="5rem" theme="#336791" className="icons" />,
+    icon: <SiPostgresql size="5rem" className="icons" />,
     name: "PostgreSQL",
+    theme: "#336791",
   },
   {
-    icon: <SiMongodb size="5rem" theme="#34A542" className="icons" />,
+    icon: <SiMongodb size="5rem" className="icons" />,
     name: "MongoDB",
+    theme: "#34A542",
   },
   {
-    icon: <SiStyledComponents size="5rem" theme="#F7CA4C" className="icons" />,
+    icon: <SiStyledComponents size="5rem" className="icons" />,
     name: "Styled-Components",
+    theme: "#F7CA4C",
   },
 ];
+
 export const themeDots = [
   { theme: "light", color: "#f7fafc" },
   { theme: "blue", color: "#0d1926" },
-  { theme: "purple", color: "#4b0081" },
+  { theme: "purple", color: "#46344e" },
   { theme: "green", color: "#606b56" },
 ];

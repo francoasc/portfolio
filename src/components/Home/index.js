@@ -2,47 +2,68 @@ import React from "react";
 import { StyledHome } from "../../styles/home-styles";
 import { themeDots } from "../../utilities/icons";
 import { setTheme } from "../../utilities/theme";
+import Flip from "react-reveal/Flip";
+import Fade from "react-reveal/Fade";
+import Bounce from "react-reveal/Bounce";
+import { Link } from "react-scroll";
 
 function Home() {
   return (
     <StyledHome>
       <div className="header-container">
         <div className="logo-container">
-          <span data-aos="flip-left" data-aos-duration="2000">
-            FRANCO HERRERA ASCARATE
-          </span>
+          <Flip left duration={1500}>
+            <span>FRANCO HERRERA ASCARATE</span>
+          </Flip>
         </div>
         <div className="header-text">
           <h1>
-            <p data-aos="fade-up">Full Stack Web Developer,</p>
+            <Fade bottom opposite={true}>
+              <p>Full Stack Web Developer,</p>
+            </Fade>
           </h1>
         </div>
-        <span className="background-color-subheader" />
+        <Fade bottom delay={500}>
+          <span className="background-color-subheader" />
+        </Fade>
         <div className="header-text">
           <h1>
-            <p data-aos="fade-up">& Mobile Developer</p>
+            <Fade bottom>
+              <p>& Mobile Developer</p>
+            </Fade>
           </h1>
-          <h3 data-aos="flip-right" data-aos-duration="2000">
-            I build websites with a focus on accessibility
-          </h3>
+          <Fade bottom duration={2000}>
+            <h3>I build websites with a focus on accessibility</h3>
+          </Fade>
         </div>
-        <div className="theme-dots-container">
-          {themeDots.map(({ theme, color }) => {
-            return (
-              <span
-                onClick={() => setTheme(theme)}
-                style={{
-                  background: color,
-                }}
-                key={theme}
-              ></span>
-            );
-          })}
-        </div>
-        <div className="scroll-button">
-          <div className="arrow-animation">↓</div>
-          <span>scroll</span>
-        </div>
+        <Bounce bottom delay={900}>
+          <div className="theme-dots-container">
+            {themeDots.map(({ theme, color }) => {
+              return (
+                <span
+                  onClick={() => setTheme(theme)}
+                  style={{
+                    background: color,
+                  }}
+                  key={theme}
+                ></span>
+              );
+            })}
+          </div>
+        </Bounce>
+        <Link
+          to="aboutSection"
+          smooth={true}
+          duration={500}
+          className="scroll-button"
+        >
+          <Bounce bottom delay={900}>
+            <div>
+              <div className="arrow-animation">↓</div>
+              <span>scroll</span>
+            </div>
+          </Bounce>
+        </Link>
       </div>
     </StyledHome>
   );
