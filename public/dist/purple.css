@@ -1,23 +1,13 @@
 :root {
-  --mainColor: #4b0081;
+  --mainColor: #46344e;
   --secondaryColor: #382a3f;
   --mainText: #fff;
   --secondaryText: #f7fafc;
   --themeDotsBorder: #fff;
-  --backgroundSubHeader: #650099;
+  --backgroundSubHeader: #382a3f;
   --buttonColor: #fff;
   --skillIcons: #161914;
-  --links: #ee4a00;
+  --links: #17a2b8;
   --colorBorder: #1d1520;
-  --subtitle: #ab3ed8;
-
-  --coverText: white;
-  --previewBg: rgb(29, 21, 32, 0.8);
-  --previewShadow: #2b202f;
+  --subtitle: #c1d9ff7c;
 }
-
-/* #4b0081
-#650099
-#7f00b2
-#ab3ed8
-#d86aff */
