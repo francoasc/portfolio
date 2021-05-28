@@ -36,14 +36,11 @@ const bounce = keyframes`
     transform: translateY(0);
   }
 
-  85% {
-    opacity: 1;
-  }
-
   100% {
     transform: translateY(-17px);
   }
 `;
+//TODO: en vercel no se ve el titulo en el celular no se porque
 
 export const StyledHome = styled.section`
   min-height: 100vh;
