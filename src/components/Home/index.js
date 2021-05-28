@@ -11,59 +11,60 @@ function Home() {
   return (
     <StyledHome>
       <div className="header-container">
-        <div className="logo-container">
-          <Flip left duration={1500}>
-            <span>FRANCO HERRERA ASCARATE</span>
-          </Flip>
-        </div>
-        <div className="header-text">
-          <h1>
-            <Fade bottom opposite={true}>
-              <p>Full Stack Web Developer,</p>
-            </Fade>
-          </h1>
-        </div>
-        <Fade bottom delay={500}>
-          <span className="background-color-subheader" />
+        <Flip left duration={1500}>
+          <h3>FRANCO HERRERA ASCARATE</h3>
+        </Flip>
+        <Fade bottom>
+          <h1>Full Stack Web Developer,</h1>
         </Fade>
-        <div className="header-text">
-          <h1>
-            <Fade bottom>
-              <p>& Mobile Developer</p>
-            </Fade>
-          </h1>
+      </div>
+      <div className="subheader-container">
+        <Fade bottom delay={500}>
+          <span className="background-subheader"></span>
+        </Fade>
+
+        <div className="subheader-text-container">
+          <Fade bottom>
+            <h1>& Mobile Developer</h1>
+          </Fade>
           <Fade bottom duration={2000}>
-            <h3>I build websites with a focus on accessibility</h3>
+            <h3>
+              I build websites with a focus on accessibility and user experience
+            </h3>
           </Fade>
         </div>
-        <Bounce bottom delay={900}>
-          <div className="theme-dots-container">
-            {themeDots.map(({ theme, color }) => {
-              return (
-                <span
-                  onClick={() => setTheme(theme)}
-                  style={{
-                    background: color,
-                  }}
-                  key={theme}
-                ></span>
-              );
-            })}
-          </div>
-        </Bounce>
-        <Link
-          to="aboutSection"
-          smooth={true}
-          duration={500}
-          className="scroll-button"
-        >
+        <div className="buttons-container">
+          <Link
+            className="scroll-button"
+            to="aboutSection"
+            smooth={true}
+            duration={500}
+          >
+            <Bounce bottom delay={900}>
+              <div>
+                <div className="arrow-animation">↓</div>
+                <span>scroll</span>
+              </div>
+            </Bounce>
+          </Link>
           <Bounce bottom delay={900}>
-            <div>
-              <div className="arrow-animation">↓</div>
-              <span>scroll</span>
+            <div className="theme-dots-container">
+              {themeDots.map(({ theme, color }) => {
+                return (
+                  <div
+                    onClick={() => setTheme(theme)}
+                    style={{
+                      backgroundColor: color,
+                      height: "30px",
+                      width: "30px",
+                    }}
+                    key={theme}
+                  ></div>
+                );
+              })}
             </div>
           </Bounce>
-        </Link>
+        </div>
       </div>
     </StyledHome>
   );

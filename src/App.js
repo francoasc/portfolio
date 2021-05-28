@@ -12,12 +12,12 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <React.Fragment>
       <Home />
       <About />
       <Projects />
       <Contact />
-    </div>
+    </React.Fragment>
   );
 }
 
