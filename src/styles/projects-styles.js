@@ -106,7 +106,7 @@ export const StyledProjectCard = styled.li`
     height: fit-content;
     display: flex;
     flex-direction: column-reverse;
-    margin: 0px 1.25rem 1rem 1.25rem;
+    margin: 0px auto 1rem auto;
     .project_content {
       display: flex;
       flex-direction: column;
@@ -142,13 +142,13 @@ export const StyledProjectCard = styled.li`
       }
     }
     .project_image {
+      position: static;
       height: 100%;
       width: 100%;
       img {
         display: block;
         height: 180px;
         width: 100%;
-        object-fit: cover;
       }
     }
   }

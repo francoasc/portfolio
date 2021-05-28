@@ -2,10 +2,11 @@ import React from "react";
 import { StyledContact } from "../../styles/contact-styles";
 import { openLinkHandler } from "../About/index";
 import Fade from "react-reveal/Fade";
+
 function Contact() {
   return (
     <StyledContact>
-      <Fade bottom duration={1500}>
+      <Fade delay={300}>
         <div>
           <h2>Get In Touch</h2>
           <p>

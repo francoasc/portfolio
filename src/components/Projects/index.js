@@ -10,6 +10,7 @@ import { openLinkHandler } from "../About/index";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Zoom from "react-reveal/Zoom";
 import Slide from "react-reveal/Slide";
+import Fade from "react-reveal/Fade";
 
 function Projects() {
   return (
@@ -20,7 +21,7 @@ function Projects() {
         </Zoom>
         <ul className="projects_container">
           {projects.map((project, i) => (
-            <Zoom key={i}>
+            <Fade delay={300} key={i}>
               <StyledProjectCard rowReverse={i} right={i}>
                 <div className="project_content">
                   <Slide bottom>
@@ -31,7 +32,7 @@ function Projects() {
                       <p>{project.description}</p>
                     </div>
                   </Slide>
-                  <Slide right>
+                  <Slide left>
                     <div className="project_links">
                       <HiExternalLink
                         size="1.5rem"
@@ -58,7 +59,7 @@ function Projects() {
                   <LazyLoadImage alt="alt_image" src={project.image} />
                 </div>
               </StyledProjectCard>
-            </Zoom>
+            </Fade>
           ))}
         </ul>
       </div>
