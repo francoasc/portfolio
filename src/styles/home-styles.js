@@ -70,7 +70,7 @@ export const StyledHome = styled.section`
       text-align: left;
       font-weight: 800;
       letter-spacing: -0.03em;
-      font-size: clamp(36px, 5vw, 70px);
+      font-size: clamp(42px, 5vw, 70px);
     }
   }
   .subheader-container {
@@ -94,14 +94,14 @@ export const StyledHome = styled.section`
       flex: 2 100%;
       h1 {
         align-self: flex-start;
-        font-size: clamp(36px, 5vw, 70px);
+        font-size: clamp(42px, 5vw, 70px);
         font-weight: 800;
         letter-spacing: -0.03em;
 
         text-align: left;
       }
       h3 {
-        font-size: clamp(16px, 4vw, 20px);
+        font-size: clamp(20px, 4vw, 20px);
         letter-spacing: 1.5px;
         font-weight: 200;
         color: var(--subtitle);
