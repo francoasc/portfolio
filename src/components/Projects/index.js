@@ -17,7 +17,7 @@ function Projects() {
     <StyledProjects>
       <div className="container">
         <Zoom duration={1500}>
-          <h1>Take a look at my projects</h1>
+          <h1>Here are my projects</h1>
         </Zoom>
         <ul className="projects_container">
           {projects.map((project, i) => (

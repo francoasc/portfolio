@@ -18,14 +18,14 @@ function About() {
           <Fade left>
             <p className="description">
               I'm a full stack web developer and mobile developer currently
-              based on Argentina. Since child my curiosity for the internet woke
-              and I wanted to know how everything was built
+              based in Argentina. As a child, my curiosity for the Internet
+              awakened and I wanted to know how everything was designed
             </p>
           </Fade>
           <Fade left>
             <p className="description_2">
-              I love programming and see how from nowhere you can build
-              fascinating things like this web for example 😉
+              I love programming and the fact that you can build fascinating
+              things from nowhere - like this website 😉
             </p>
           </Fade>
           <Fade left>

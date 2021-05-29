@@ -15,7 +15,7 @@ function Home() {
           <h3>FRANCO HERRERA ASCARATE</h3>
         </Flip>
         <Fade bottom>
-          <h1>Full Stack Web Developer,</h1>
+          <h1>Full Stack Web Developer</h1>
         </Fade>
       </div>
       <div className="subheader-container">

@@ -10,9 +10,9 @@ function Contact() {
         <div>
           <h2>Get In Touch</h2>
           <p>
-            I'm currently looking new opportunities, do not hesitate to contact
-            me for possible queries, collaborations, projects or anything else,
-            my inbox is always open.
+            I'm currently looking for new opportunities, do not hesitate to
+            contact me for possible queries, collaborations, projects or
+            anything else, my inbox is always open.
           </p>
           <button
             onClick={() =>

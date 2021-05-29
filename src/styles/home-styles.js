@@ -1,5 +1,7 @@
 import styled, { keyframes } from "styled-components";
 
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
 const bounce = keyframes`
   0% {
     animation-timing-function: ease-out;
@@ -43,7 +45,7 @@ const bounce = keyframes`
 
 export const StyledHome = styled.section`
   min-height: 100vh;
-  min-width: 100%;
+  min-width: fit-content;
   background-color: var(--mainColor);
   color: var(--mainText);
   display: flex;
@@ -85,7 +87,7 @@ export const StyledHome = styled.section`
       position: absolute;
       background-color: var(--backgroundSubHeader);
       width: 100%;
-      height: 100%;
+      height: ${isMobile ? "85%" : "100%"};
     }
     .subheader-text-container {
       display: flex;
@@ -117,13 +119,14 @@ export const StyledHome = styled.section`
       flex-direction: row;
       align-items: flex-end;
       justify-content: space-between;
-      padding-bottom: 5px;
+      padding-bottom: ${isMobile ? "4rem" : "5px"};
       .scroll-button {
         flex: 1;
         div {
           cursor: pointer;
           width: fit-content;
           font-size: clamp(16px, 20px, 25px);
+
           .arrow-animation {
             display: inline-block;
           }
