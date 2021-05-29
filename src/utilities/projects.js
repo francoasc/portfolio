@@ -14,7 +14,7 @@ export const projects = [
     description: `Educational application. Designed to be administered from the school, its administration is responsible for generating the users of the teachers and students, and for recreating the structure of the school.`,
     image:
       "https://joafran.github.io/portfolio/static/media/integrAR-screen.80aa0fe4.png",
-    repository: "",
+    repository: "https://github.com/jucaran/integrAR",
     link: "",
   },
 ];
