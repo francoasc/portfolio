@@ -87,7 +87,7 @@ export const StyledHome = styled.section`
       position: absolute;
       background-color: var(--backgroundSubHeader);
       width: 100%;
-      height: ${isMobile ? "85%" : "100%"};
+      height: ${isMobile ? "90%" : "100%"};
     }
     .subheader-text-container {
       display: flex;
